@@ -6,4 +6,5 @@ type User {
 
 type Query {
     users: [User!] @all
+    user(id: ID! @eq ): User @find
 }
